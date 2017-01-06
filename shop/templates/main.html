@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for item in goods %}
+        <p>{{ item.title }}</p><br>
+        <p>{{ item.text }}</p><br>
+        <p><img src="/media/{{ item.image }}"></p>
+    {% endfor %}
+
+{% endblock %}
